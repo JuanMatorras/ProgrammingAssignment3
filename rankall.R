@@ -26,7 +26,7 @@ rankall <- function(outcome, num = "best") {
                                                candidateHosps[, 1]), ]
         ## List with valid states ordered alphabetically
         validStates <- sort(unique(outcomeData[, 7]))
-        rankTable <- data.frame(Hospital = character(), State = character())
+        rankTable <- data.frame(hospital = character(), state = character())
         if (num == "best") num <- 1
         for (istate in validStates) {
                 stateCandidates <- subset(finalListHosps, finalListHosps[, 2] == 
